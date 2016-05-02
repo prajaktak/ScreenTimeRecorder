@@ -10,11 +10,16 @@
 		F934F1121CD092B300B0AC40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F1111CD092B300B0AC40 /* main.m */; };
 		F934F1151CD092B300B0AC40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F1141CD092B300B0AC40 /* AppDelegate.m */; };
 		F934F1181CD092B300B0AC40 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F1171CD092B300B0AC40 /* ViewController.m */; };
-		F934F11B1CD092B300B0AC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F934F1191CD092B300B0AC40 /* Main.storyboard */; };
 		F934F11D1CD092B300B0AC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F934F11C1CD092B300B0AC40 /* Assets.xcassets */; };
 		F934F1201CD092B300B0AC40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F934F11E1CD092B300B0AC40 /* LaunchScreen.storyboard */; };
 		F934F12B1CD092B300B0AC40 /* ScreenTimeRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F12A1CD092B300B0AC40 /* ScreenTimeRecorderTests.m */; };
 		F934F1361CD092B300B0AC40 /* ScreenTimeRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F1351CD092B300B0AC40 /* ScreenTimeRecorderUITests.m */; };
+		F934F1471CD38E6D00B0AC40 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F934F1461CD38E6D00B0AC40 /* CoreLocation.framework */; };
+		F934F1491CD3F2CD00B0AC40 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F934F1481CD3F2CD00B0AC40 /* Realm.framework */; };
+		F934F14B1CD3F75800B0AC40 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F934F1481CD3F2CD00B0AC40 /* Realm.framework */; };
+		F934F14C1CD3F75800B0AC40 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F934F1481CD3F2CD00B0AC40 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F934F1741CD66EA700B0AC40 /* realmObjectClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F934F1731CD66EA700B0AC40 /* realmObjectClass.m */; };
+		F934F1771CD70F8C00B0AC40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F934F1751CD70F8C00B0AC40 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F934F14D1CD3F75800B0AC40 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F934F14C1CD3F75800B0AC40 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F934F10D1CD092B300B0AC40 /* ScreenTimeRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F934F1111CD092B300B0AC40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +60,6 @@
 		F934F1141CD092B300B0AC40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F934F1161CD092B300B0AC40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F934F1171CD092B300B0AC40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F934F11A1CD092B300B0AC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F934F11C1CD092B300B0AC40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F934F11F1CD092B300B0AC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F934F1211CD092B300B0AC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +69,11 @@
 		F934F1311CD092B300B0AC40 /* ScreenTimeRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenTimeRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F934F1351CD092B300B0AC40 /* ScreenTimeRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenTimeRecorderUITests.m; sourceTree = "<group>"; };
 		F934F1371CD092B300B0AC40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F934F1461CD38E6D00B0AC40 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F934F1481CD3F2CD00B0AC40 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		F934F1721CD66EA700B0AC40 /* realmObjectClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = realmObjectClass.h; sourceTree = "<group>"; };
+		F934F1731CD66EA700B0AC40 /* realmObjectClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = realmObjectClass.m; sourceTree = "<group>"; };
+		F934F1761CD70F8C00B0AC40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F934F14B1CD3F75800B0AC40 /* Realm.framework in Frameworks */,
+				F934F1491CD3F2CD00B0AC40 /* Realm.framework in Frameworks */,
+				F934F1471CD38E6D00B0AC40 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F934F10F1CD092B300B0AC40 /* ScreenTimeRecorder */,
+				F934F14E1CD5EB0400B0AC40 /* Framework */,
 				F934F1291CD092B300B0AC40 /* ScreenTimeRecorderTests */,
 				F934F1341CD092B300B0AC40 /* ScreenTimeRecorderUITests */,
 				F934F10E1CD092B300B0AC40 /* Products */,
@@ -101,11 +128,13 @@
 		F934F10F1CD092B300B0AC40 /* ScreenTimeRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				F934F1751CD70F8C00B0AC40 /* Main.storyboard */,
 				F934F1131CD092B300B0AC40 /* AppDelegate.h */,
 				F934F1141CD092B300B0AC40 /* AppDelegate.m */,
 				F934F1161CD092B300B0AC40 /* ViewController.h */,
 				F934F1171CD092B300B0AC40 /* ViewController.m */,
-				F934F1191CD092B300B0AC40 /* Main.storyboard */,
+				F934F1721CD66EA700B0AC40 /* realmObjectClass.h */,
+				F934F1731CD66EA700B0AC40 /* realmObjectClass.m */,
 				F934F11C1CD092B300B0AC40 /* Assets.xcassets */,
 				F934F11E1CD092B300B0AC40 /* LaunchScreen.storyboard */,
 				F934F1211CD092B300B0AC40 /* Info.plist */,
@@ -140,6 +169,15 @@
 			path = ScreenTimeRecorderUITests;
 			sourceTree = "<group>";
 		};
+		F934F14E1CD5EB0400B0AC40 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				F934F1481CD3F2CD00B0AC40 /* Realm.framework */,
+				F934F1461CD38E6D00B0AC40 /* CoreLocation.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +188,7 @@
 				F934F1091CD092B300B0AC40 /* Sources */,
 				F934F10A1CD092B300B0AC40 /* Frameworks */,
 				F934F10B1CD092B300B0AC40 /* Resources */,
+				F934F14D1CD3F75800B0AC40 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,9 +282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F934F1771CD70F8C00B0AC40 /* Main.storyboard in Resources */,
 				F934F1201CD092B300B0AC40 /* LaunchScreen.storyboard in Resources */,
 				F934F11D1CD092B300B0AC40 /* Assets.xcassets in Resources */,
-				F934F11B1CD092B300B0AC40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +312,7 @@
 				F934F1181CD092B300B0AC40 /* ViewController.m in Sources */,
 				F934F1151CD092B300B0AC40 /* AppDelegate.m in Sources */,
 				F934F1121CD092B300B0AC40 /* main.m in Sources */,
+				F934F1741CD66EA700B0AC40 /* realmObjectClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +348,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F934F1191CD092B300B0AC40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F934F11A1CD092B300B0AC40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F934F11E1CD092B300B0AC40 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F934F11F1CD092B300B0AC40 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F934F1751CD70F8C00B0AC40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F934F1761CD70F8C00B0AC40 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScreenTimeRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarangbk.ScreenTimeRecorder;
@@ -424,6 +468,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScreenTimeRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarangbk.ScreenTimeRecorder;
@@ -435,6 +483,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScreenTimeRecorderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarangbk.ScreenTimeRecorderTests;
@@ -447,6 +499,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = ScreenTimeRecorderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sarangbk.ScreenTimeRecorderTests;
@@ -496,6 +552,7 @@
 				F934F13C1CD092B300B0AC40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F934F13D1CD092B300B0AC40 /* Build configuration list for PBXNativeTarget "ScreenTimeRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +561,7 @@
 				F934F13F1CD092B300B0AC40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F934F1401CD092B300B0AC40 /* Build configuration list for PBXNativeTarget "ScreenTimeRecorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +570,7 @@
 				F934F1421CD092B300B0AC40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

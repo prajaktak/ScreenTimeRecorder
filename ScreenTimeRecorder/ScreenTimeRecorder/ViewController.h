@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSInteger onScreenTimeCounter;
+    NSTimer *onScreenTimer;
+}
 
-
+-(void)StartSecondCounting;
+-(void)endSecondCounting;
 @end
+
+
 
